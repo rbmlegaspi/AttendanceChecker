@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColor" >
+<!-- <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+         >
+
+        <requestFocus />
+    </EditText>
+    
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/celsius" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit" />
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:onClick="onClick"
+        android:text="@string/calc" />
+
+    <TextView
+        android:id="@+id/sampleString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	-->
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/camera_preview"
+        android:layout_below="@+id/camera_preview"
+        android:layout_marginTop="25dp"
+        android:onClick="onClick"
+        android:text="@string/Capture" />
+
+	<GridView 
+	    android:id="@+id/gridview" android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:columnWidth="90dp"
+        android:numColumns="5" android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp" android:stretchMode="columnWidth"
+        android:gravity="center" android:layout_gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/button1"
+        ></GridView>
+
+    
+</RelativeLayout>
+
